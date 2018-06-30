@@ -150,12 +150,61 @@ body {
 }
 
 .blockBeeline .boxYellow {
-  background-color: yellow;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  background-color: #f5d515;
+  clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
 }
 
-.boxesRight {
-  background-color: green;
+.blockBeeline .boxWite {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.blockBeeline .boxEnd {
+  background-color: #e7371d;
+  padding: 50px;
+  font-size: 16px;
+}
+
+.blockRight {
   width: 43%;
   margin: 0 30px;
+}
+
+.blockRight .boxRed {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  background: url("../img/back3.png") center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  min-height: 40%;
+}
+
+.blockRight .boxRed > img {
+  margin-top: 20%;
+  width: 17%;
+}
+
+.blockRight .boxRed :nth-child(2) {
+  margin-top: 6%;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.blockRight .boxRed :nth-child(3) {
+  font-size: 10px;
+}
+
+.blockRight .boxWeAra {
+  background-color: green;
+}
+
+.blockRight .boxWeAra > h2 {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #d3dedd;
+}
+
+.blockRight .contacts {
+  background-color: aqua;
 }
