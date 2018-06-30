@@ -1,6 +1,6 @@
 .profitItems {
-  margin-left: -40px;
-  margin-right: -40px;
+  margin-left: -20px;
+  margin-right: -20px;
   font-size: 0;
   text-align: center;
 }
@@ -12,8 +12,8 @@
 }
 
 .humans .items {
-  margin-left: -40px;
-  margin-right: -40px;
+  margin-left: -20px;
+  margin-right: -20px;
   font-size: 0;
   text-align: center;
 }
@@ -26,12 +26,12 @@
 
 @media screen and (max-width: 400px) {
   .profitItems {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
   .humans .items {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 }
