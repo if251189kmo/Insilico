@@ -116,10 +116,46 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.article {
+  display: flex;
+  justify-content: center;
+}
+
 .blockBeeline {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 43%;
+  margin: 0 30px;
+}
+
+.blockBeeline .boxDark {
+  text-align: center;
+  padding: 80px 0;
+  color: #feffff;
+}
+
+.blockBeeline .boxDark > h1 {
+  border-bottom: 10px solid #feffff;
+  border-top: 10px solid #feffff;
+  font-size: 90px;
+  letter-spacing: 30px;
+  max-width: 40%;
+  margin: 0 auto;
+  font-weight: 800;
+}
+
+.blockBeeline .boxDark > p {
+  font-size: 26px;
+  padding-top: 25px;
+  font-weight: 800;
+}
+
+.blockBeeline .boxYellow {
   background-color: yellow;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
 .boxesRight {
   background-color: green;
+  width: 43%;
+  margin: 0 30px;
 }

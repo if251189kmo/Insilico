@@ -1,9 +1,9 @@
-@columns: 12;
+@columns: 24;
 @atom: (100% / @columns);
 
 @break_md: 992px;
-@break_sm: 720px;
-@break_xs: 576px;
+@break_sm: 992px;
+@break_xs: 720px;
 @break_xxs: 400px;
 
 @offset: 2.5%;
@@ -20,7 +20,6 @@
 
 @fields: 30px;
 @fields_md: 20px;
-@fields_xxs: 10px;
 
 .wrapper-full(){
     padding-left: @fields;
@@ -29,11 +28,6 @@
     .md-block({
         padding-left: @fields_md;
         padding-right: @fields_md;
-    });
-
-    .xxs-block({
-        padding-left: @fields_xxs;
-        padding-right: @fields_xxs;
     });
 }
 
@@ -48,7 +42,7 @@
 }
 
 .wrapper(){
-    max-width: 1150px;
+    max-width: 2500px;
     margin: 0 auto;
     .wrapper-full();
 }
