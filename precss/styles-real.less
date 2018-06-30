@@ -1,0 +1,418 @@
+@import "project.less";
+
+.reset();
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    article{
+        margin: 0 10px;
+    }        
+}
+
+/*
+.debug{
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+*/
+
+.background {
+    
+    .from(2000px, {
+        min-height: 2700px;;                                                                  
+    });
+
+    background: url("../img/back1.png") no-repeat, center;    
+    background-size: 100%;    
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 0 49%);
+    min-height: 1300px;
+    
+
+}
+
+
+.boxes {
+     
+    .from(2000px, {
+        margin-top: -2700px;                                                                  
+    });
+
+    .row-flex();    
+    justify-content: center;
+   
+    position: relative;
+    margin-top: -1300px; 
+       
+    
+    .blockBeeline {
+                
+        .col();
+            .size(5);
+            .size-md(5);
+            .size-xs(5);
+            .size-xxs(5);      
+                
+        .boxDark {
+
+            .from(2000px, {
+                min-height: 1600px;                                                                  
+            });
+
+            background-color: rgba( 0, 0, 0, 0.7);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);         
+            min-height: 770px;
+
+            >h1{
+                text-align: center;
+                color: #feffff;
+                padding-top: 80px; 
+
+                :first-child {
+                    font-size: 90px; 
+                    font-weight: 800;               
+                    max-width: 300px;
+                    margin: 0 auto;                
+                    border-bottom: 15px solid #feffff;
+                    border-top: 15px solid #feffff;
+                    letter-spacing: 30px;
+                }    
+                
+                :last-child {
+                    font-size: 26px;
+                    padding-top: 25px;
+                    font-weight: 800; 
+                
+                }
+
+            }
+        
+        }
+
+        .boxYellow {
+
+            .from(2000px, {
+                min-height: 1200px;
+                clip-path: polygon(0 0%, 100% 26.5%, 100% 100%, 0 100%);
+                margin-top: -320px;                                                                   
+            });
+            
+            background-color:  #f5d515;
+            clip-path: polygon(0 0%, 100% 26%, 100% 100%, 0 100%);
+            margin-top: -154px;                  
+            
+
+            :first-child{
+                padding: 130px 50px 30px 50px;  
+                font-size: 60px;
+                font-weight: bolder;                    
+                font-weight: 900;                                
+                    
+            }
+
+            :nth-child(2) {
+                font-size: 16px;
+                padding: 0 50px;
+                max-width: 850px;                                         
+                
+            }
+            :nth-child(3) {
+                font-size: 16px;  
+                padding: 30px 50px 50px 50px;
+                max-width: 850px;   
+                color: #feffff;                        
+               
+            }
+        }
+        
+        .boxWite {
+            text-align: center;
+            
+            >img {
+                width: 25%;
+            }
+
+            >p, div {
+                font-size: 20px;
+                margin: 20px 0;
+                word-spacing: 10px;
+
+                >a {
+                    text-decoration: none;
+                    color: #1b1b1b;
+                    &:hover {
+                        color: #f5d515;
+                    }                
+                }
+            }
+
+            
+
+        }
+
+        .boxEnd {
+            background-color: #e7371d;
+            padding: 50px;
+            font-size: 16px; 
+
+        }
+        
+    }
+
+    .boxesRight{
+        .col();
+            .size(5);
+            .size-md(5);
+            .size-xs(5);
+            .size-xxs(5);
+
+        .blockRed {    
+            
+            clip-path: polygon(0 0, 100% 0, 100% 30%, 0 20.5%);
+            background: url("../img/back3.png") center;    
+            background-size: cover; 
+            min-height: 1600px;
+        
+            >div {
+                color: #feffff;                
+                text-align: center;
+                padding-top: 110px;
+            
+                >img {
+                    width: 20%;
+                }
+            
+                :nth-child(2) {
+                    margin-top: 30px;
+                    font-size: 25px;
+                    font-weight: bold;
+                    letter-spacing: 5px;                
+                }
+
+                :nth-child(3) {
+                    font-size: 13px;
+                                
+                }
+            }      
+        }
+
+        .blockRightEnd {
+
+            margin-top: -550px;
+            
+            h2{
+                font-size: 50px;
+                font-weight: bold;
+                padding-bottom: 15px;
+                border-bottom: 3px solid #d3dedd;  
+            }
+
+            .weAra {
+                h3 {
+                    font-size: 22px;
+                    font-weight: bold;
+                    padding: 25px 0 5px 0;
+                }
+
+                :nth-child(2) {
+                    padding-bottom: 55px;
+                    font-size: 15px;
+                }
+
+                :nth-child(3) {
+                    padding-bottom: 30px;
+                    border-bottom: 3px solid #d3dedd;
+                    font-size: 15px;  
+                }
+            } 
+            
+            .contact {
+                text-align: right;
+                padding-top: 15px;
+                
+                .contactUs {
+                    font-size: 21px;
+                    font-weight: bold;
+                }
+
+                .address {
+
+                    address, p, a {
+                        display: inline-block;
+                    }
+
+                    address, a {
+
+                        .from(1300px, {
+                            min-width: 350px;          
+                        });
+                        .from(2000px, {
+                            min-width: 500px;                                                                  
+                        });
+                        min-width: 200px;
+                        text-decoration: none;
+                        color: #121414;                        
+                    }
+
+                    p{
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-left: 10px;        
+                    }
+
+                    >a {
+                        &:hover {
+                            color: #f5d515;
+                        }
+                    }
+                }                                
+            }
+        }
+    }      
+}
+
+
+
+
+/*
+
+.sectionOne {
+    
+    
+    .row-flex();
+    
+    justify-content: center;
+    margin-left: 0px;    
+    
+    background: url("../img/back1.png") no-repeat, center;    
+    background-size: 100%;    
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 0 49%);
+   
+    
+    .blockBeeline {
+        .col();    
+        .size(5.5);
+        .size-md(5);
+        .size-sm(5);
+        .size-xs(5);    
+        .size-xxs(5);
+        
+        
+        
+              
+        .boxDark {
+            background-color: rgba( 0, 0, 0, 0.7);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78.5%);
+
+            
+
+            min-height: 1500px;
+            >h1{
+                text-align: center;
+                color: #feffff;
+                padding-top: 156px; 
+
+                :first-child {
+                font-size: 185px; 
+                font-weight: 800;               
+                max-width: 548px;
+                margin: 0 auto;                
+                border-bottom: 30px solid #feffff;
+                border-top: 30px solid #feffff;
+                letter-spacing: 21.67px;
+                }    
+                
+                :last-child {
+                font-size: 48px;
+                padding-top: 72px;
+                
+                
+                }
+
+            }
+
+           
+        }
+        .boxYellow {
+            background-color:  #f5d515;
+            clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0 100%);
+            margin-top: -330px;
+           
+            
+            
+
+            :first-child{
+                padding: 200px 100px 91px 100px;   
+                
+                font-size: 140px;
+                font-weight: bolder;                    
+                font-weight: 900;  
+                               
+                    
+            }
+
+            :nth-child(2){
+                font-size: 42px;
+                padding: 0 100px;
+                max-width: 850px;
+                                         
+                
+            }
+            :nth-child(3){
+                font-size: 42px;  
+                padding: 81px 100px 137px 100px;
+                max-width: 850px;   
+                color: #feffff;                        
+               
+            }
+        }            
+    }
+
+            
+
+
+
+
+
+    .blockRed {
+        .col();    
+        .size(5.5);
+        .size-md(5);
+        .size-sm(5);
+        .size-xs(5);    
+        .size-xxs(5);
+        clip-path: polygon(0 0, 100% 0, 100% 42%, 0 27.5%);
+        background: url("../img/back3.png") center;    
+        background-size: cover; 
+        
+        
+        >div {
+            color: #feffff;                
+            text-align: center;
+            margin-top: 200px;
+            
+            :first-child {
+                
+            }
+            :nth-child(2) {
+                margin-top: 60px;
+                font-size: 45px;
+                font-weight: bolder;
+                letter-spacing: 5px;                
+            }
+            :nth-child(3) {
+                font-size: 22px;
+                
+            }
+        }
+                   
+    
+
+
+        }
+       
+    }
+    
+*/
+
+
