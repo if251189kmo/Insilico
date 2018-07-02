@@ -167,6 +167,9 @@ body {
 .blockBeeline .boxYellow {
   background-color: #f5d515;
   clip-path: polygon(0 0, 100% 27%, 100% 100%, 0% 100%);
+  margin-left: -0.4px;
+  margin-right: -0.4px;
+  margin-bottom: -1px;
 }
 
 .blockBeeline .boxYellow > h2 {
@@ -189,6 +192,8 @@ body {
 .blockBeeline .boxWite {
   text-align: center;
   background-color: #ffffff;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
 .blockBeeline .boxWite > div {
